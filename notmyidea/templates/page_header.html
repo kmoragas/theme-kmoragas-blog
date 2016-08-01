@@ -1,0 +1,24 @@
+<p>
+<b>
+{% if page.instituto %}
+      {{ page.instituto }}
+{% endif %}
+<br />
+{% if page.escuela %}
+      {{ page.escuela }}
+{% endif %}
+</b>
+<br />
+{% if page.plan %}
+      {{ page.plan }}
+{% endif %}
+</p>
+<p>
+{% if page.horarioconsulta %}
+      <b>Horario de Consulta: </b>{{ page.horarioconsulta }}
+{% endif %}
+<br />
+{% if page.lugarconsulta %}
+      <b>Lugar de Consulta: </b>{{ page.lugarconsulta }}
+{% endif %}
+</p>

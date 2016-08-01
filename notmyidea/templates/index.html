@@ -10,7 +10,17 @@
                 <article>
                     <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
 		    {% include 'twitter.html' %}
-                    {% include 'article_infos.html' %}{{ article.content }}{% include 'comments.html' %}
+                    {% include 'article_infos.html' %}
+
+        {% if article.objetivo %}
+                <h1>Objetivo</h1> 
+		<p>
+		{{ article.objetivo}}
+		</p>
+        {% endif %}
+
+		    {{ article.content }}
+		    {% include 'comments.html' %}
                 </article>
             </aside><!-- /#featured -->
             {% if loop.length > 1 %}

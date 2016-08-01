@@ -20,4 +20,39 @@
 {% include 'taglist.html' %}
 {% import 'translations.html' as translations with context %}
 {{ translations.translations_for(article) }}
+        {% if article.porcentaje %}
+                <br />
+        <abbr class="porcentaje">
+                <b> Porcentaje: </b> {{ article.porcentaje }} %
+        </abbr>
+        {% endif %}
+
+        {% if article.fechaentrega %}
+                <br />
+        <abbr class="fechaentrega">
+                <b>Fecha de Entrega:</b> {{ article.fechaentrega }}
+        </abbr>
+        {% endif %}
+
+
+        {% if article.fecharevision %}
+                <br />
+        <abbr class="fecharevision">
+                <b>Fecha de Revisi&oacute;n:</b> {{ article.fecharevision}}
+        </abbr>
+        {% endif %}
+
+        {% if article.lenguaje %}
+                <br />
+        <abbr class="lenguaje">
+                <b>Lenguaje:</b> {{ article.lenguaje}}
+        </abbr>
+        {% endif %}
+
+        {% if article.recursohumano %}
+                <br />
+        <abbr class="recursohumano">
+                <b>Recurso Humano:</b> {{ article.recursohumano}}
+        </abbr>
+        {% endif %}
 </footer><!-- /.post-info -->
