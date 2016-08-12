@@ -55,4 +55,11 @@
                 <b>Recurso Humano:</b> {{ article.recursohumano}}
         </abbr>
         {% endif %}
+
+        {% if article.download %}
+                <br />
+        <abbr class="download">
+                <a href="{{ article.download }}">Descargar PDF</a>
+        </abbr>
+        {% endif %}
 </footer><!-- /.post-info -->
